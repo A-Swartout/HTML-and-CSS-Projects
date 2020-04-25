@@ -1,0 +1,11 @@
+p {
+	color: ghostwhite;
+	background: grey;
+	font-size: medium;
+	text-align: center;
+}
+h2 {
+	color: ghostwhite;
+	text-shadow: 0 0 5px deepskyblue, 0 0 5px darkslategrey, 0 0 5px firebrick;
+	
+}
