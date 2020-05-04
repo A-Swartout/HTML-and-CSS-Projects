@@ -1,0 +1,19 @@
+html {
+    font-family: "Times New Roman", times, serif;
+    font-size: 20px;
+}
+
+input {
+    width: 25%;
+    display: block;
+    margin: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+input[type=question] {
+    width: 75%;
+    height: 150px;
+}
