@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<title>Concerning Hobbits</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./one_page_website.css">
+		<script src="js/one_page_website.js"></script>
 	</head>
 	<body>
 		<!-- NAV -->
@@ -29,47 +31,87 @@
 			<div id="famous_hobbits">
 				<h2>Famous Hobbits</h2>
 				<p>While there are many famous hobbits, here are a few of the most notable ones.</p>
-				<div>
-					<img src="./images/hobbits/frodo.jpg" alt="Image Not Available">
-					<div>
-					<h1>Frodo Baggins, Frodo of the Nine-Fingers</h1>
-					</div>
-				</div>
 				
-				<div>
-					<img src="./images/hobbits/Sam.webp" alt="Image Not Available">
-					<div>
-					<h1>Samwise Gamgee, Samwise the Brave</h1>
+					<div class="row">
+						<div class="column">
+							<img src="./images/hobbits/frodo.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/hobbits/Sam.webp" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/hobbits/merry.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/hobbits/pippin.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/hobbits/bilbo.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/hobbits/Bandobras.webp" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+						</div>
 					</div>
-				</div>
-				
-				<div>
-					<img src="./images/hobbits/merry.jpg" alt="Image Not Available">
-					<div>
-					<h1>Meriadoc Brandybuck, Merry the Magnificent</h1>
-					</div>
-				</div>
-				
-				<div>
-					<img src="./images/hobbits/pippin.jpg" alt="Image Not Available">
-					<div>
-					<h1>Peregrin Took, Thain of the Shire</h1>
-					</div>
-				</div>
-				
-				<div>
-					<img src="./images/hobbits/bilbo.jpg" alt="Image Not Available">
-					<div>
-					<h1>Bilbo Baggins, Burglar</h1>
-					</div>
-				</div>
-				
-				<div>
-					<img src="./images/hobbits/Bandobras.webp" alt="Image Not Available">
-					<div>
-					<h1>Bandobras Took, Rider of Horses of Men</h1>
-					</div>
-				</div>
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						<div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="./images/hobbits/frodo.jpg" style="width:100%">
+						</div>
+					  
+						<div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="./images/hobbits/Sam.webp" style="width:100%">
+						</div>
+					  
+						<div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="./images/hobbits/merry.jpg" style="width:100%">
+						</div>
+						  
+						<div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="./images/hobbits/pippin.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="./images/hobbits/bilbo.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="./images/hobbits/Bandobras.webp" style="width:100%">
+						</div>
+						  
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+					  
+					  
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/frodo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Frodo Baggins, Frodo of the Nine-Fingers">
+						</div>
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/Sam.webp" style="width:100%" onclick="currentSlide(2)" alt="Samwise Gamgee, Samwise the Brave">
+						</div>
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/merry.jpg" style="width:100%" onclick="currentSlide(3)" alt="Meriadoc Brandybuck, Merry the Magnificent">
+						</div>
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/pippin.jpg" style="width:100%" onclick="currentSlide(4)" alt="Peregrin Took, Thain of the Shire">
+						</div>
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/bilbo.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bilbo Baggins, Burglar">
+						</div>
+						<div class="column">
+							<img class="dots cursor" src="./images/hobbits/Bandobras.webp" style="width:100%" onclick="currentSlide(6)" alt="Bandobras Took, Rider of Horses">
+						</div>
 			</div>
 		</section>
 		<!-- END Gallery -->
